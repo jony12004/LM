@@ -1,0 +1,69 @@
+* { /* selector universal a todos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Modelo de cajas*/
+}
+
+body {
+    background-color: none;
+    height: 100vh;
+    /*min-height: 100vh*/
+    /*max-height: 100vh*/
+    width: 100vw;
+    /*min-height: 100vw*/
+    /*max-height: 100vw*/
+}
+
+h1 {
+    color: red;
+}
+
+header{
+    background-color: rgb(118, 118, 118);
+    height: 10vh; /*Medidas absolutas*/
+    /*flexbox*/
+    display: flex; /*Modelo de cajas flexibles*/
+    flex-direction: row; /*direccion de los items (horizontales)*/
+    flex-wrap: nowrap; /*no permitir salto de linea entre items*/
+    justify-content: right;/*alineacion horizontal de los items*/
+}
+
+header figure {
+    border: 1px red solid;
+    height: 100%;
+    margin-left: 20px;
+}
+
+header figure img {
+    height: 10vh;    
+}
+
+/*selector descendente*/
+/*EB: headre, footer, main*/
+/*EL: img, a*/
+header h1 {
+    color: blue;
+    /*width: 20vw;
+    /*display: inline-block; /*Transforma elemento de bloque en elemento de linea*/
+    margin-left: 30px;
+}
+
+header nav {
+    
+}
+
+header nav a{
+    background-color: gray;
+    border : 1px solid black;
+    /*display: block; /*Tranforma en elemento de bloque*/
+}
+
+main {
+    background-color: aliceblue;
+    height: 80vh;
+}
+
+footer {
+    background-color: aqua;
+    height: 10vh;
+}
